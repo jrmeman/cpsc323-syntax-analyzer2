@@ -1,0 +1,147 @@
+	TOKENS			     LEXEMES
+
+Token: Identifier 		    Lexeme: a
+     <Statement> -> <Expression>
+     <Expression> -> <Term><E'>
+     <Term> -> <Factor><T'>
+     <Factor> -> id
+
+Token: Operator 		    Lexeme: +
+     <T'> -> epsilon
+     <E'> -> +<Term><E'>
+
+Token: Identifier 		    Lexeme: b
+     <Term> -> <Factor><T'>
+     <Factor> -> id
+
+Token: Separator 		    Lexeme: ;
+     --New Line--
+
+Token: Identifier 		    Lexeme: c
+     <Statement> -> <Expression>
+     <Expression> -> <Term><E'>
+     <Term> -> <Factor><T'>
+     <Factor> -> id
+
+Token: Operator 		    Lexeme: -
+     <T'> -> epsilon
+     <E'> -> -<Term><E'>
+
+Token: Identifier 		    Lexeme: d
+     <Term> -> <Factor><T'>
+     <Factor> -> id
+
+Token: Separator 		    Lexeme: ;
+     --New Line--
+
+Token: Identifier 		    Lexeme: e
+     <Statement> -> <Expression>
+     <Expression> -> <Term><E'>
+     <Term> -> <Factor><T'>
+     <Factor> -> id
+
+Token: Operator 		    Lexeme: *
+     <T'> -> *<Factor><T'>
+
+Token: Identifier 		    Lexeme: f
+     <Factor> -> id
+
+Token: Separator 		    Lexeme: ;
+     --New Line--
+
+Token: Identifier 		    Lexeme: g
+     <Statement> -> <Expression>
+     <Expression> -> <Term><E'>
+     <Term> -> <Factor><T'>
+     <Factor> -> id
+
+Token: Operator 		    Lexeme: /
+     <T'> -> /<Factor><T'>
+
+Token: Identifier 		    Lexeme: h
+     <Factor> -> id
+
+Token: Separator 		    Lexeme: ;
+     --New Line--
+
+Token: Identifier 		    Lexeme: i
+     <Statement> -> <Assign>
+     <Assign> -> id = <Expression>
+
+Token: Operator 		    Lexeme: =
+
+Token: Identifier 		    Lexeme: j
+     <Expression> -> <Term><E'>
+     <Term> -> <Factor><T'>
+     <Factor> -> id
+
+Token: Operator 		    Lexeme: +
+     <T'> -> epsilon
+     <E'> -> +<Term><E'>
+
+Token: Identifier 		    Lexeme: k
+     <Term> -> <Factor><T'>
+     <Factor> -> id
+
+Token: Operator 		    Lexeme: -
+     <T'> -> epsilon
+     <E'> -> -<Term><E'>
+
+Token: Separator 		    Lexeme: (
+     <Term> -> <Factor><T'>
+     <Factor> -> ( <Expression> )
+
+Token: Separator 		    Lexeme: (
+     <Expression> -> <Term><E'>
+     <Term> -> <Factor><T'>
+     <Factor> -> ( <Expression> )
+
+Token: Identifier 		    Lexeme: l
+     <Expression> -> <Term><E'>
+     <Term> -> <Factor><T'>
+     <Factor> -> id
+
+Token: Operator 		    Lexeme: *
+     <T'> -> *<Factor><T'>
+
+Token: Identifier 		    Lexeme: m
+     <Factor> -> id
+
+Token: Separator 		    Lexeme: )
+     <T'> -> epsilon
+     <E'> -> epsilon
+
+Token: Operator 		    Lexeme: /
+     <T'> -> /<Factor><T'>
+
+Token: Identifier 		    Lexeme: n
+     <Factor> -> id
+
+Token: Separator 		    Lexeme: )
+     <T'> -> epsilon
+     <E'> -> epsilon
+
+Token: Separator 		    Lexeme: ;
+     --New Line--
+
+Token: Identifier 		    Lexeme: o
+     <Statement> -> <Assign>
+     <Assign> -> id = <Expression>
+
+Token: Operator 		    Lexeme: =
+
+Token: Integer 		    Lexeme: 10
+     <Expression> -> <Term><E'>
+     <Term> -> <Factor><T'>
+     <Factor> -> num
+
+Token: Separator 		    Lexeme: ;
+     --New Line--
+
+Token: Keyword 		    Lexeme: int
+     <Statement> -> <Declaration>
+     <Declaration> -> type id
+
+Token: Identifier 		    Lexeme: p
+
+Syntactically Correct

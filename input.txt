@@ -1,0 +1,8 @@
+! Test file for my syntactical analyzer that successfully reads all portions of what is asked for !
+a + b;
+c - d;
+e * f;
+g / h;
+i = j + k - ((l * m) / n);
+o = 10;
+int p;
